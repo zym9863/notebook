@@ -41,7 +41,7 @@ class AppTheme {
         surface: parchmentYellow,
       ),
       // 卡片主题
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
         color: parchmentYellow,
         elevation: 2,
         shape: RoundedRectangleBorder(
@@ -169,7 +169,7 @@ class AppTheme {
         surface: starTrailBlue.withOpacity(0.8),
       ),
       // 卡片主题
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
         color: starTrailBlue.withOpacity(0.8),
         elevation: 2,
         shape: RoundedRectangleBorder(
