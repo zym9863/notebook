@@ -6,6 +6,9 @@ on:
       - 'v*'  # 只在推送标签时触发，例如 v1.0.0
   workflow_dispatch:  # 允许手动触发
 
+permissions:
+  contents: write
+
 jobs:
   build-android:
     name: Build Android APK
@@ -24,7 +27,7 @@ jobs:
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.27.0'
+          flutter-version: '3.32.4'
           cache: true
 
       - name: Get Flutter dependencies
@@ -51,7 +54,7 @@ jobs:
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.27.0'
+          flutter-version: '3.32.4'
           cache: true
 
       - name: Enable Windows desktop
